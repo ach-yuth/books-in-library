@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: bisque;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+h1 {
+  text-align: center;
+}
+.bookCard-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 9px;
+  padding: 12px;
+  background-color: aliceblue;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in;
+}
+.bookCard-container:hover {
+  transform: scale(1.05);
+}
+span {
+  font-size: medium;
+  font-weight: 400;
+  text-justify: center;
+  line-height: 24px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.booksList-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.btn-container {
+  display: flex;
+  justify-content: end;
+}
+.main-btn {
+  padding: 12px 9px;
+  border-radius: 9px;
+  border: none;
+  background-color: rgb(88, 88, 247);
+  color: white;
+  cursor: pointer;
+}
+.main-btn:hover {
+  background-color: rgb(66, 66, 241);
+}
+.main-btn:focus {
+  outline: none;
+}
+.popUpDisplay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  background-color: rgba(240, 248, 255, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+.popUpForm {
+  width: 70vh;
+  height: 70vh;
+  border-radius: 9px;
+  background-color: rgb(253, 212, 161);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+.popUpButton {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  padding: 6px 6px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgb(88, 88, 247);
+  color: white;
+  cursor: pointer;
+}
+.title,
+.category,
+.author,
+.overview,
+.summary,
+.year {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+input {
+  padding: 3px 6px;
+}
+input:focus {
+  outline: none;
+}
+.add-btn {
+  padding: 6px 9px;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(88, 88, 247);
+  color: white;
+  cursor: pointer;
+}
