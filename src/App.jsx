@@ -8,7 +8,7 @@ function App() {
     <div className="main-container">
       <h1>Books</h1>
 
-      <Header isOpenPopUp={isOpenPopUp} setIsOpenPopUp={setIsOpenPopUp} />
+      <Header isOpenPopUp={isOpenPopUp} />
 
       <BooksList isOpenPopUp={isOpenPopUp} setIsOpenPopUp={setIsOpenPopUp} />
     </div>

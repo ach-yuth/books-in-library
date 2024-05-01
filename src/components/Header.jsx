@@ -1,6 +1,5 @@
 import React from "react";
-import PopUpDisplay from "./PopUpDisplay";
-export default function Header({ isOpenPopUp, setIsOpenPopUp }) {
+export default function Header({ setIsOpenPopUp }) {
   return (
     <div>
       <div className="btn-container">
