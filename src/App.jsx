@@ -6,10 +6,7 @@ function App() {
   const [isOpenPopUp, setIsOpenPopUp] = useState(false);
   return (
     <div className="main-container">
-      <h1>Books</h1>
-
-      <Header isOpenPopUp={isOpenPopUp} />
-
+      <Header setIsOpenPopUp={setIsOpenPopUp} />
       <BooksList isOpenPopUp={isOpenPopUp} setIsOpenPopUp={setIsOpenPopUp} />
     </div>
   );

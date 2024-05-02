@@ -27,7 +27,7 @@ h1 {
   transition: transform 0.3s ease-in;
 }
 .bookCard-container:hover {
-  transform: rotate(3deg);
+  transform: scale(1.05);
 }
 
 span {
@@ -85,7 +85,8 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 9px;
+  gap: 6px;
+  box-sizing: border-box;
 }
 .popUpButton {
   position: absolute;
@@ -98,12 +99,7 @@ span {
   color: white;
   cursor: pointer;
 }
-.title,
-.category,
-.author,
-.overview,
-.summary,
-.year {
+.inputs-container {
   display: flex;
   flex-direction: column;
   gap: 6px;

@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import Title from "./inputs/Title";
-import Author from "./inputs/Author";
-import Category from "./inputs/Category";
-import Overview from "./inputs/Overview";
-import Summary from "./inputs/Summary";
-import Year from "./inputs/Year";
+import Inputs from "./Inputs";
 
 export default function PopUpDisplay({ setIsOpenPopUp, setBooks }) {
   const [title, setTitle] = useState("");
@@ -38,12 +33,43 @@ export default function PopUpDisplay({ setIsOpenPopUp, setBooks }) {
           setIsOpenPopUp(false);
         }}
       >
-        <Title title={title} setTitle={setTitle} />
-        <Author author={author} setAuthor={setAuthor} />
-        <Category category={category} setCategory={setCategory} />
-        <Overview overview={overview} setOverview={setOverview} />
-        <Summary summary={summary} setSummary={setSummary} />
-        <Year year={year} setYear={setYear} />
+        <h2>add your book</h2>
+        <Inputs
+          type={"text"}
+          value={title}
+          label={"Title"}
+          setValue={setTitle}
+        />
+        <Inputs
+          type={"text"}
+          value={author}
+          label={"Author"}
+          setValue={setAuthor}
+        />
+        <Inputs
+          type={"text"}
+          value={category}
+          label={"Category"}
+          setValue={setCategory}
+        />
+        <Inputs
+          type={"text"}
+          value={overview}
+          label={"Overview"}
+          setValue={setOverview}
+        />
+        <Inputs
+          type={"text"}
+          value={summary}
+          label={"Summary"}
+          setValue={setSummary}
+        />
+        <Inputs
+          type={"number"}
+          value={year}
+          label={"Year"}
+          setValue={setYear}
+        />
         <button type="submit" className="add-btn">
           {" "}
           add your book
