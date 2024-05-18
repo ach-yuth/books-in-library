@@ -1,5 +1,5 @@
 import React from "react";
-export default function Header({ setIsOpenPopUp }) {
+export default function Header({ setIsOpenPopUp, setCurrentIndex }) {
   return (
     <div>
       <h1>Books</h1>
@@ -9,6 +9,7 @@ export default function Header({ setIsOpenPopUp }) {
           className="main-btn"
           onClick={() => {
             setIsOpenPopUp(true);
+            setCurrentIndex(null);
           }}
         >
           Add your Favourite bookCard

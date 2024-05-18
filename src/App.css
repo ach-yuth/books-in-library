@@ -110,11 +110,14 @@ input {
 input:focus {
   outline: none;
 }
-.add-btn {
+.edit-btn {
   padding: 6px 9px;
   border-radius: 3px;
   border: none;
   background-color: rgb(88, 88, 247);
   color: white;
   cursor: pointer;
+  width: 30%;
+  font-weight: bolder;
+  letter-spacing: 2px;
 }

@@ -1,6 +1,11 @@
 import React from "react";
 
-export default function BookCard({ book }) {
+export default function BookCard({
+  book,
+  setIsOpenPopUp,
+  setCurrentIndex,
+  idx,
+}) {
   return (
     <div className="bookCard-container">
       <h3>{book.title}</h3>
@@ -22,6 +27,15 @@ export default function BookCard({ book }) {
       <h4>
         Estd: <span>{book.year}</span>
       </h4>
+      <button
+        className="edit-btn"
+        onClick={() => {
+          setIsOpenPopUp(true);
+          setCurrentIndex(idx);
+        }}
+      >
+        Edit{" "}
+      </button>
     </div>
   );
 }
